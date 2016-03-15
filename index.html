@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/angular-contextmenu.css">
+</head>
+<body ng-controller="appCtrl">
+    <button type="button" style="position: absolute;left:85%;bottom: 30px;width:200px;height: 50px;"
+            context-menus="options">点击</button>
+    <button type="button" style="position: absolute;left:55%;bottom: 70px;width:200px;height: 50px;"
+            context-menus="options2">点击</button>
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="src/angular-contextmenu.js"></script>
+    <script type="text/javascript">
+        var app = angular.module('myApp',['angular-contextmenu']);
+        app.controller('appCtrl', ['$scope',function ($scope) {
+            $scope.options = {
+                title:'我是标题',
+                menuItems:[{
+                    label:"Edit",
+                    callback: function (evt) {
+                        alert('edit');
+                    }
+                },{
+                    label:"Copy",
+                    disabled:true,
+                    callback: function (evt) {
+                        alert('copy');
+                    }
+                },{
+                    divider:true
+                },{
+                    label:"Quit",
+                    callback: function (evt) {
+                        alert('quit');
+                    }
+                }]
+            };
+            $scope.options2 = {
+                title:'我是标题',
+                menuItems:[{
+                    label:"Edit",
+                    callback: function (evt) {
+                        alert('edit');
+                    }
+                },{
+                    label:"Quit",
+                    callback: function (evt) {
+                        alert('quit');
+                    }
+                }]
+            };
+        }]);
+    </script>
+</body>
+</html>

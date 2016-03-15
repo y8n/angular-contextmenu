@@ -1,0 +1,56 @@
+.ng-contextmenu-layer {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  height: 452px;
+  width: 1440px;
+  display: block;
+  background-color: #000; }
+
+.ng-contextmenu-list {
+  z-index: 1;
+  position: absolute;
+  display: inline-block;
+  box-sizing: border-box;
+  min-width: 180px;
+  max-width: 360px;
+  padding: 4px 0;
+  margin: 0;
+  font-family: "Proxima Nova", "Helvetica Neue", Arial, sans-serif;
+  font-size: inherit;
+  list-style-type: none;
+  background: #fff;
+  border: 1px solid #bebebe;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); }
+  .ng-contextmenu-list .ng-contextmenu-item {
+    position: relative;
+    padding: 5px 25px;
+    color: #2f2f2f;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #fff;
+    cursor: pointer; }
+    .ng-contextmenu-list .ng-contextmenu-item span {
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+  .ng-contextmenu-list .ng-contextmenu-item:hover {
+    color: #fff;
+    background-color: #2980b9; }
+  .ng-contextmenu-list .ng-contextmenu-item.disabled:hover {
+    color: #fff;
+    background-color: #98CEF1; }
+  .ng-contextmenu-list .ng-contextmenu-item.disabled {
+    cursor: not-allowed; }
+  .ng-contextmenu-list .ng-contextmenu-item.context-menu-divider {
+    padding: 0;
+    margin: 5px 0;
+    border-bottom: 1px solid #e6e6e6; }

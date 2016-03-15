@@ -1,0 +1,10 @@
+<div class="ng-contextmenu" ng-show="showMenu">
+    <div class="ng-contextmenu-layer"></div>
+    <ul class="ng-contextmenu-list">
+        <li ng-repeat="item in options.menuItems"
+            ng-class="{disabled:item.disabled,'context-menu-divider':item.divider}"
+            class="ng-contextmenu-item" ng-click="clickMenuItemHandler(item)" ng-contextmenu>
+            <span>{{item.label}}</span>
+        </li>
+    </ul>
+</div>

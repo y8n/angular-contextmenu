@@ -1,0 +1,23 @@
+{
+  "name": "angular-contextmenu",
+  "version": "0.0.1",
+  "description": "angular directive for contextMenu",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/y8n/angular-contextmenu.git"
+  },
+  "keywords": [
+    "angular",
+    "directive",
+    "contextmenu"
+  ],
+  "author": "YangJiyuan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/y8n/angular-contextmenu/issues"
+  },
+  "homepage": "https://github.com/y8n/angular-contextmenu#readme"
+}
